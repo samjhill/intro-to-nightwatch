@@ -1,0 +1,14 @@
+{
+  "name": "intro-to-nightwatch",
+  "version": "1.0.0",
+  "description": "An easy-to-follow guide to implementing your first end-to-end (e2e) test",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/nightwatch"
+  },
+  "author": "Sam Hill",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^0.9.21"
+  }
+}

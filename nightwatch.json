@@ -1,0 +1,39 @@
+{
+	"src_folders": ["./tests"],
+	"output_folder": "./reports",
+	"live_output": true,
+	"parallel_process_delay": 1500,
+	"test_workers": true,
+	"selenium": {
+		"start_process": true,
+		"server_path": "./bin/selenium-server-standalone-3.9.1.jar",
+		"log_path": "",
+		"cli_args": {
+			"webdriver.chrome.driver": "./bin/chromedriver"
+		}
+	},
+
+	"test_settings": {
+		"default": {
+			"exclude" : ["tests/util.js"],
+			"selenium_port"  : 4444,
+      "selenium_host"  : "127.0.0.1",
+			"desiredCapabilities": {
+        "browserName": "chrome",
+        "marionette": true
+      }
+		},
+
+		"chrome": {
+			"desiredCapabilities": {
+				"browserName": "chrome",
+				"chromeOptions": {
+					"args": [
+						"use-fake-device-for-media-stream",
+						"use-fake-ui-for-media-stream"
+					]
+				}
+			}
+		}
+	}
+}
