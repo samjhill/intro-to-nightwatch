@@ -1,4 +1,4 @@
 git clone https://github.com/samjhill/intro-to-nightwatch
 cd intro-to-nightwatch
 npm install
-brew cast install java
+brew cask install java
